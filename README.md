@@ -3,6 +3,8 @@
 
 **Echo** is a real-time chat application built using **Laravel** and **Vue.js**. It allows users to add friends, send messages, reply to messages, delete messages and friends, track read recipients, and see typing indicators. The app uses **Pusher** for real-time broadcasting and communication.
 
+👉 Check out the complete guide on Medium: [Echo Chat App — Real-Time Chat with Laravel, Vue.js & Pusher](https://medium.com/@almormohammad939/echo-chat-app-real-time-chat-with-laravel-vue-js-pusher-658c3f308d54)
+
 ## 🗂️ Project Structure
 
 This project is divided into two main folders:
