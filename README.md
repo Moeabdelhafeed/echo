@@ -142,13 +142,6 @@ Add these to both `.env` files.
 
 ---
 
-## 🧠 Notes
-
-- Make sure to allow broadcasting in Laravel (`config/broadcasting.php`)
-- If using Laravel Echo and Pusher, make sure your frontend has access to `laravel-echo`, `pusher-js`, and correct authorization settings.
-
----
-
 ## 📜 License
 
 This project is licensed under the MIT License.
