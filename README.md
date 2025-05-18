@@ -30,6 +30,19 @@ The project is served from the `public/` folder of the Laravel project, which al
 
 ---
 
+## 🔑 Pusher Setup
+
+You must create a [Pusher account](https://pusher.com/) and create an app to get:
+
+- `PUSHER_APP_ID`  
+- `PUSHER_APP_KEY`  
+- `PUSHER_APP_SECRET`  
+- `PUSHER_APP_CLUSTER`
+
+Add these to both `.env` files.
+
+---
+
 ## 📁 Laravel Folder: `echo`
 
 This is the backend API built with Laravel.
@@ -145,19 +158,6 @@ Make sure both the Laravel server and the Vue frontend assets are properly set u
   ```
 
   This will run the Vue dev server separately. In this mode, you'll typically access the frontend via the Vue dev server URL (usually `http://localhost:5173` or similar), and API calls will hit your Laravel backend running separately.
-
----
-
-## 🔑 Pusher Setup
-
-You must create a [Pusher account](https://pusher.com/) and create an app to get:
-
-- `PUSHER_APP_ID`  
-- `PUSHER_APP_KEY`  
-- `PUSHER_APP_SECRET`  
-- `PUSHER_APP_CLUSTER`
-
-Add these to both `.env` files.
 
 ---
 
