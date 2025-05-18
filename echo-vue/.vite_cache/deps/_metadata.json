@@ -1,0 +1,154 @@
+{
+  "hash": "c17ccfbf",
+  "configHash": "ef13e855",
+  "lockfileHash": "493e0fe2",
+  "browserHash": "5df26eca",
+  "optimized": {
+    "@vueuse/core": {
+      "src": "../../node_modules/@vueuse/core/index.mjs",
+      "file": "@vueuse_core.js",
+      "fileHash": "d35b86ca",
+      "needsInterop": false
+    },
+    "bootstrap/dist/js/bootstrap.bundle.js": {
+      "src": "../../node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+      "file": "bootstrap_dist_js_bootstrap__bundle__js.js",
+      "fileHash": "d137d62d",
+      "needsInterop": true
+    },
+    "dayjs": {
+      "src": "../../node_modules/dayjs/dayjs.min.js",
+      "file": "dayjs.js",
+      "fileHash": "ef5a35fc",
+      "needsInterop": true
+    },
+    "dayjs/plugin/relativeTime": {
+      "src": "../../node_modules/dayjs/plugin/relativeTime.js",
+      "file": "dayjs_plugin_relativeTime.js",
+      "fileHash": "ffebf7d7",
+      "needsInterop": true
+    },
+    "gsap": {
+      "src": "../../node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "5f7163fa",
+      "needsInterop": false
+    },
+    "laravel-echo": {
+      "src": "../../node_modules/laravel-echo/dist/echo.js",
+      "file": "laravel-echo.js",
+      "fileHash": "a1f597ab",
+      "needsInterop": false
+    },
+    "pinia": {
+      "src": "../../node_modules/pinia/dist/pinia.mjs",
+      "file": "pinia.js",
+      "fileHash": "a1cdadbb",
+      "needsInterop": false
+    },
+    "pusher-js": {
+      "src": "../../node_modules/pusher-js/dist/web/pusher.js",
+      "file": "pusher-js.js",
+      "fileHash": "6e2e3134",
+      "needsInterop": true
+    },
+    "vite": {
+      "src": "../../node_modules/vite/dist/node/index.js",
+      "file": "vite.js",
+      "fileHash": "2e6cbf8f",
+      "needsInterop": false
+    },
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "b3dadf44",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "5a23b5e4",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "dep-BaJt-LTH-YQUDCJJP": {
+      "file": "dep-BaJt-LTH-YQUDCJJP.js"
+    },
+    "__vite-optional-peer-dep_lightningcss_vite-LUUMBJI5": {
+      "file": "__vite-optional-peer-dep_lightningcss_vite-LUUMBJI5.js"
+    },
+    "node_http2-LSZGSR42": {
+      "file": "node_http2-LSZGSR42.js"
+    },
+    "watch-CIDZDHNG": {
+      "file": "watch-CIDZDHNG.js"
+    },
+    "rollup-DXDX7C3W": {
+      "file": "rollup-DXDX7C3W.js"
+    },
+    "chunk-OE24RCBY": {
+      "file": "chunk-OE24RCBY.js"
+    },
+    "node_http-PVJAKJLZ": {
+      "file": "node_http-PVJAKJLZ.js"
+    },
+    "node_https-MF5UXHZ4": {
+      "file": "node_https-MF5UXHZ4.js"
+    },
+    "dep-D-7KCb9p-I32YPQ44": {
+      "file": "dep-D-7KCb9p-I32YPQ44.js"
+    },
+    "dep-B7_zXWZq-RLUGX2NP": {
+      "file": "dep-B7_zXWZq-RLUGX2NP.js"
+    },
+    "chunk-IDGMCLDH": {
+      "file": "chunk-IDGMCLDH.js"
+    },
+    "postcss-CEGRZOIY": {
+      "file": "postcss-CEGRZOIY.js"
+    },
+    "chunk-B2BST3Q5": {
+      "file": "chunk-B2BST3Q5.js"
+    },
+    "chunk-UGCJFHR6": {
+      "file": "chunk-UGCJFHR6.js"
+    },
+    "chunk-KPGLAEFU": {
+      "file": "chunk-KPGLAEFU.js"
+    },
+    "chunk-RX7BTZZI": {
+      "file": "chunk-RX7BTZZI.js"
+    },
+    "chunk-X45QO7DX": {
+      "file": "chunk-X45QO7DX.js"
+    },
+    "chunk-OZBCPRVH": {
+      "file": "chunk-OZBCPRVH.js"
+    },
+    "chunk-G2ZEZZAJ": {
+      "file": "chunk-G2ZEZZAJ.js"
+    },
+    "chunk-M2MSWSHF": {
+      "file": "chunk-M2MSWSHF.js"
+    },
+    "chunk-MPVQUUHK": {
+      "file": "chunk-MPVQUUHK.js"
+    },
+    "chunk-I5RSIQOR": {
+      "file": "chunk-I5RSIQOR.js"
+    },
+    "chunk-4XRL7ZXG": {
+      "file": "chunk-4XRL7ZXG.js"
+    },
+    "chunk-AYVSL3LM": {
+      "file": "chunk-AYVSL3LM.js"
+    },
+    "chunk-IJV5NOMV": {
+      "file": "chunk-IJV5NOMV.js"
+    },
+    "chunk-ZSMWDLMK": {
+      "file": "chunk-ZSMWDLMK.js"
+    }
+  }
+}
