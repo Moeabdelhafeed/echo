@@ -1,16 +1,16 @@
 
 # Echo Chat App
 
-**Echo** is a real-time chat application built using **Laravel** and **Vue.js**. It allows users to add friends, send messages, reply to messages, and delete both messages and friends. The app uses **Pusher** for real-time broadcasting and communication.
+**Echo** is a real-time chat application built using **Laravel** and **Vue.js**. It allows users to add friends, send messages, reply to messages, delete messages and friends, track read recipients, and see typing indicators. The app uses **Pusher** for real-time broadcasting and communication.
 
 ## 🗂️ Project Structure
 
 This project is divided into two main folders:
 
-- **`echo`** – Laravel Backend
+- **`echo`** – Laravel Backend  
 - **`echo-vue`** – Vue Frontend
 
-The project is served from the `public/` folder of the Laravel project.
+The project is served from the `public/` folder of the Laravel project, which already contains the compiled Vue assets.
 
 ---
 
@@ -21,7 +21,9 @@ The project is served from the `public/` folder of the Laravel project.
 - 🔁 Reply to Messages  
 - ❌ Delete Messages  
 - 👋 Remove Friends  
-- 🔐 User Authentication 
+- 👀 Read Recipients for Messages  
+- ⌨️ Typing Indicators in Chat  
+- 🔐 User Authentication  
 - ⚡ Real-Time Messaging with **Pusher**
 
 ---
@@ -44,8 +46,8 @@ This is the backend API built with Laravel.
    cp .env.example .env
    ```
 
-3. Configure the `.env` file:
-   - Set your **database** connection (MySQL)
+3. Configure the `.env` file:  
+   - Set your **database** connection (MySQL)  
    - Configure your **Pusher** credentials:
 
      ```env
@@ -95,8 +97,8 @@ This is the frontend client built with Vue.js that interacts with the Laravel ba
    cp .env.example .env
    ```
 
-3. Configure the `.env` file:
-   - Set the backend API base URL (usually Laravel's `http://127.0.0.1:8000`)
+3. Configure the `.env` file:  
+   - Set the backend API base URL (usually Laravel's `http://127.0.0.1:8000`)  
    - Add your **Pusher** key and cluster:
 
      ```env
@@ -110,22 +112,37 @@ This is the frontend client built with Vue.js that interacts with the Laravel ba
    npm install
    ```
 
-5. Build the frontend:
+5. **Important:** The compiled Vue frontend assets (the `dist` folder) are already located inside the Laravel `public/vue` directory. Therefore, **you only need to run `npm run build` if you make any new changes to the Vue frontend.** Otherwise, no additional setup is required for the frontend.
+
+6. To build the frontend (only when you make changes):
 
    ```bash
    npm run build
    ```
 
-   This will generate the compiled assets in the Laravel `public/` folder (as the project is already set up for integration with Laravel).
+7. After building, the `dist` folder will be added automatically to the `public/vue` folder in Laravel, so Laravel can serve the compiled Vue frontend assets seamlessly.
 
 ---
 
 ## 🚀 Running the App
 
-Make sure both the Laravel server and the Vue dev server (or built assets in `public/`) are running properly. If you're using built assets:
+Make sure both the Laravel server and the Vue frontend assets are properly set up:
 
-- Laravel will serve the Vue frontend from its `public/` folder.
-- Visit `http://127.0.0.1:8000` to use the app.
+- Since the Vue app is already built and placed inside the Laravel `public/vue` folder, you can just run the Laravel server and visit:
+
+  ```
+  http://127.0.0.1:8000
+  ```
+
+  to use the app right away.
+
+- If you want to run the Vue frontend in development mode (for live reloading and faster development), you can run inside the `echo-vue` folder:
+
+  ```bash
+  npm run dev
+  ```
+
+  This will run the Vue dev server separately. In this mode, you'll typically access the frontend via the Vue dev server URL (usually `http://localhost:5173` or similar), and API calls will hit your Laravel backend running separately.
 
 ---
 
@@ -133,9 +150,9 @@ Make sure both the Laravel server and the Vue dev server (or built assets in `pu
 
 You must create a [Pusher account](https://pusher.com/) and create an app to get:
 
-- `PUSHER_APP_ID`
-- `PUSHER_APP_KEY`
-- `PUSHER_APP_SECRET`
+- `PUSHER_APP_ID`  
+- `PUSHER_APP_KEY`  
+- `PUSHER_APP_SECRET`  
 - `PUSHER_APP_CLUSTER`
 
 Add these to both `.env` files.
